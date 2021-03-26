@@ -14,7 +14,7 @@ import matplotlib.gridspec as gridspec
 from src.utils import interp
 from src.simulation import simulate
 
-def plot_posterior(row, cumulative=True,freq=5,root='.'):
+def plot_posterior(row, cumulative=True,freq=5,root='.', div=1000,color='k'):
     sample_loc = root+'/output/posteriors/' + row['event_name'] + '_extracted.p'
     dat = root+'/data/timeseries/aggregated/' + row['incident_name'] + '_raw.parquet'
     
@@ -28,33 +28,33 @@ def plot_posterior(row, cumulative=True,freq=5,root='.'):
     ci = np.percentile(samples['y_hat'],q=[5.5,94.5],axis=0)
     
     if cumulative:
-        y=np.cumsum(y)
-        mu = np.median(np.cumsum(samples['y_hat'],axis=1),axis=0)
+        y=np.cumsum(y)/div
+        mu = np.median(np.cumsum(samples['y_hat'],axis=1),axis=0)/div
 
         ci = np.percentile(np.cumsum(samples['y_hat'],axis=1)
-                           ,q=[5.5,94.5],axis=0)
+                           ,q=[5.5,94.5],axis=0)/div
         
     plt.plot(x,y ,color='k')
-    plt.plot(x,mu,ls='--',color='k')
-    plt.fill_between(x, ci[0,:], ci[1,:],alpha=.3,color='k')
+    plt.plot(x,mu,ls='--',color=color)
+    plt.fill_between(x, ci[0,:], ci[1,:],alpha=.3,color=color)
     
     
     plt.ylabel('Tweets per %s min.' % str(freq))
     if cumulative:
-        plt.ylabel('Cumulative engagement \n(millions)')
+        plt.ylabel('Cumulative engagement \n(thousands)')
     plt.xlabel('Time (min.)')
     plt.xlim(0,mu.size*freq-5)
 
-def plot_posterior_and_save(row,root='.', keep=True,freq=5):
+def plot_posterior_and_save(row,root='.', keep=True,freq=5,color='k'):
     file_output = root + '/output/figures/SI/posterior_predictive/' + row['event_name'] + '_pp.png'
     if row['included']==True:
         if keep and os.path.isfile(file_output):
             pass
         else:
             plt.subplot(211)
-            samples = plot_posterior(row,cumulative=False, freq=5)
+            samples = plot_posterior(row,cumulative=False, freq=5,color=color)
             plt.subplot(212)
-            samples = plot_posterior(row,cumulative=True,freq=5)
+            samples = plot_posterior(row,cumulative=True,freq=5,color=color)
             plt.suptitle(row['event_name'])
             plt.tight_layout()
             plt.savefig(file_output,dpi=400)
@@ -124,7 +124,7 @@ def plot_sims(order, sim_df, legend_title, legend_column):
     plt.xlabel('Time (normalized)')
     plt.ylabel('Cumulative engagement')
     
-def plot_figure_1(row, included,pal,root='.'):
+def plot_figure_1(row, included,pal,root='.',baseline_color='k'):
     fig, axs = plt.subplots(2,2,figsize=(8,8))
     axs = axs.flat
 
@@ -153,13 +153,13 @@ def plot_figure_1(row, included,pal,root='.'):
 
     plt.sca(axs[1])
     from src.figures import plot_posterior
-    plot_posterior(row,cumulative=False)
+    plot_posterior(row,cumulative=False,color=baseline_color)
     plt.xlim(-5,)
 
 
     plt.sca(axs[2])
     from src.figures import plot_posterior
-    plot_posterior(row,cumulative=True)
+    plot_posterior(row,cumulative=True,color=baseline_color)
     plt.xlim(-5,)
 
 
@@ -203,7 +203,7 @@ def plot_figure_1(row, included,pal,root='.'):
                        stop_at=120)
         removal.append(out)  
 
-    agg_df_ban = pd.read_parquet(row['verified_loc'])[row['start']:row['end']]
+    agg_df_ban = pd.read_parquet(row['50K_loc'])[row['start']:row['end']]
     follower_distribution_ban = [np.array(item) for item in agg_df_ban['follower_distribution'].values]
     y = agg_df_ban['total_tweets']
 
@@ -216,7 +216,7 @@ def plot_figure_1(row, included,pal,root='.'):
 
 
     get_cumulative = lambda x: np.median(np.cumsum(np.array(x).T,axis=0),
-             axis=1)
+             axis=1)/1000
     x = np.arange(get_cumulative(baseline).shape[0])*5
 
     plt.plot(get_cumulative(baseline),
@@ -228,13 +228,13 @@ def plot_figure_1(row, included,pal,root='.'):
     plt.plot(get_cumulative(nudge),
             color=pal[2],lw=3,label='10% Nudge')
     plt.plot(get_cumulative(ban),
-            color=pal[1],lw=3,label='Verified')
+            color=pal[1],lw=3,label='50K')
 
     legend = plt.legend(title='Condition',
                         loc=2,prop={'size': 8})
     legend.get_title().set_fontsize('10')
 
-    plt.ylabel('Cumulative engagement')
+    plt.ylabel('Cumulative engagement \n(thousands)')
     plt.xlabel('Time (min.)')
     plt.xlim(0,x.size)
     plt.tight_layout()

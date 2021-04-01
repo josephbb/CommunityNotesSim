@@ -24,7 +24,7 @@ def list_incidents(engine):
     Keyword arguments:
     engine -- postgres engine created with src.database.get_engine
     """
-    query_all = "SELECT DISTINCT incident FROM public.all_ticket_tweets WHERE incident IS NOT NULL;"
+    query_all = "SELECT incident, COUNT(*) FROM public.all_ticket_tweets WHERE incident IS NOT NULL GROUP BY incident;"
     incidents =pd.read_sql(query_all, con=engine)
     return incidents
 
@@ -36,7 +36,7 @@ def get_incident_data(incident,engine):
     incident -- the name of an incident, as identified in our database
     engine -- postgres engine created with src.database.get_engine
     """
-    query = "SELECT  user_followers_count, user_screen_name, created_at, user_verified FROM all_ticket_tweets WHERE incident=(%(incident)s)"
+    query = "SELECT  COUNT(*), user_followers_count, user_screen_name, created_at, user_verified FROM all_ticket_tweets WHERE incident=(%(incident)s)"
     incident_df = pd.read_sql(query, params={'incident':incident},con=engine)
     return incident_df
 

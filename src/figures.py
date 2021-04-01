@@ -36,7 +36,7 @@ def plot_posterior(row, cumulative=True,freq=5,root='.', div=1000,color='k'):
         
     plt.plot(x,y ,color='k')
     plt.plot(x,mu,ls='--',color=color)
-    plt.fill_between(x, ci[0,:], ci[1,:],alpha=.3,color=color)
+    plt.fill_between(x, ci[0,:], ci[1,:],alpha=.3,facecolor=color)
     
     
     plt.ylabel('Tweets per %s min.' % str(freq))
@@ -107,7 +107,7 @@ def add_sim_line(sim_row,scale=1e6,root='.'):
     ci = np.percentile(out,axis=0, q=[5.5,94.5])/scale
     xvals = np.linspace(0,1,interp_size)
     plt.plot(xvals, mu,color=sim_row['color'])
-    plt.fill_between(xvals, ci[0], ci[1],alpha=.4,color=sim_row['color'], label=sim_row['name'])
+    plt.fill_between(xvals, ci[0], ci[1],alpha=.4,facecolor=sim_row['color'], label=sim_row['name'])
     
     return out
 
@@ -238,3 +238,21 @@ def plot_figure_1(row, included,pal,root='.',baseline_color='k'):
     plt.xlabel('Time (min.)')
     plt.xlim(0,x.size)
     plt.tight_layout()
+    
+def plot4c(samples, max_events_incidents,x_sim): 
+    mu_pred = np.median(samples['y_sim'],axis=0)
+    ci_pred = np.percentile(samples['y_sim'],q=[4.5,50,94.5], axis=0)
+
+    plt.plot(x_sim, mu_pred,color='k')
+    plt.fill_between(x_sim,ci_pred[0], ci_pred[2],facecolor='k',alpha=.3)
+
+    plt.scatter(max_events_incidents['observed_engagement'], 
+                max_events_incidents['after'],facecolor='k',alpha=.3)
+
+    ax = plt.gca()
+    ax.set_yscale('log')
+    ax.set_xscale('log')
+    plt.ylabel('Subsequent engagement')
+    plt.xlabel('Event engagement')
+    plt.xlim(np.min(x_sim), np.max(x_sim))
+    

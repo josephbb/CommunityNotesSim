@@ -23,8 +23,8 @@ def aggregate(raw_df, freq=5, removed=[]):
     aggregated['follower_distribution'] = fcs
     return aggregated
 
-def segment_ts(x, distance_hours=6,before_min=.05,freq=5, after_min=.05,pmin=.3):
-    peaks = find_peaks(x, height=np.max(x)*pmin, distance=60/freq*distance_hours)
+def segment_ts(x,before_min=.05,freq=5, after_min=.05,pmin=.3):
+    peaks = find_peaks(x, height=np.max(x)*pmin)#, distance=60/freq*distance_hours)
     
     start = 0
     peak_locs = np.array(peaks[0])
@@ -46,12 +46,12 @@ def segment_ts(x, distance_hours=6,before_min=.05,freq=5, after_min=.05,pmin=.3)
             
     return cuts
 
-def get_peaks(row,root='.', start=0, freq=5,pmin=.3,after_min=.05, before_min=.05, distance=6):
+def get_peaks(row,root='.', start=0, freq=5,pmin=.3,after_min=.05, before_min=.05):
     raw_df = pd.read_parquet(root + '/data/timeseries/aggregated/' 
                              + row['incident_name'] + '_raw.parquet')
     x = raw_df['total_tweets'].values
     peak_cuts=segment_ts(x,freq=5,pmin=.3,after_min=.05, 
-                                before_min=.05, distance_hours=6)
+                                before_min=.05)
     peak_cuts = [cut for cut in peak_cuts if cut[1]-cut[0] >= 12]
     return peak_cuts
 

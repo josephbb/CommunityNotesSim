@@ -104,7 +104,7 @@ def sample_neg_binom(model, max_events_incidents):
                                             'N':during.size, 
                                              'x_sim':np.log(x_sim), 
                                              'S':x_sim.size})
-    return samples
+    return samples,x_sim
 
 def get_plot_df(order, max_events_incidents,sim_df, samples, root='.'):
     

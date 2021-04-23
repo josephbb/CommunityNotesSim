@@ -8,6 +8,12 @@ tqdm.pandas()
 pandarallel.initialize(nb_workers=8,verbose=True)
 
 def get_engine(venus_path='/home/joebak/venus_cred.txt'):
+    """
+    A function that returns an engine to be used with
+    our internal postgres databse
+    
+    Parameter:
+    """
     with open(venus_path) as f:
         venus_auth = f.readlines()
     venus_auth = [x.strip() for x in venus_auth]

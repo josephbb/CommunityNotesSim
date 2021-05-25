@@ -42,12 +42,12 @@ def get_incident_data(incident,engine):
     incident -- the name of an incident, as identified in our database
     engine -- postgres engine created with src.database.get_engine
     """
-    query = "SELECT  COUNT(*), user_followers_count, user_screen_name, created_at, user_verified FROM all_ticket_tweets WHERE incident=(%(incident)s)"
+    query = "SELECT user_followers_count, user_screen_name, created_at, user_verified FROM all_ticket_tweets WHERE incident=(%(incident)s)"
     incident_df = pd.read_sql(query, params={'incident':incident},con=engine)
     return incident_df
 
 
-def aggregate_and_save(row, engine,freq=5, removed=[], floc='/data/timeseries/aggregated/', root='.',keep=True):
+def aggregate_and_save(row, engine,freq=5, removed=[], floc='/data/timeseries/aggregated/', root='.',keep=True, to_share=False):
     """Gather an incident's raw data, aggregates it (with removed users) and save it.
     Keyword arguments:
     row -- a row of a pandas table created by list_incidents
@@ -63,6 +63,6 @@ def aggregate_and_save(row, engine,freq=5, removed=[], floc='/data/timeseries/ag
         raw_df = get_incident_data(row['incident'],engine)
         if type(removed)==dict:
             removed = removed[row['incident']]   
-        agg = aggregate(raw_df,freq, removed)
+        agg = aggregate(raw_df,freq, removed,to_share)
         agg.to_parquet(root + floc + row['incident_name'] + '_raw.parquet',compression=None)
     return True

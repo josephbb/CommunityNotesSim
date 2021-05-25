@@ -1,0 +1,153 @@
+,incident,count,incident_name
+0,bad_statistics_1,185193,bad_statistics_1
+1,bad statistics 3,60909,bad_statistics_3
+2,bad statistics 4,78951,bad_statistics_4
+3,bad statistics 5,101674,bad_statistics_5
+4,bad statistics 6,4736,bad_statistics_6
+5,bad statistics 7,51204,bad_statistics_7
+6,ballot box issues 1,41731,ballot_box_issues_1
+7,ballot box issues 2,182536,ballot_box_issues_2
+8,ballot chasers 1,275324,ballot_chasers_1
+9,ballot counting 1,50816,ballot_counting_1
+10,ballot counting 2,78915,ballot_counting_2
+11,ballot dumping1,224826,ballot_dumping1
+12,ballot dumping2,109605,ballot_dumping2
+13,ballot dumping3,46851,ballot_dumping3
+14,ballot dumping4,44785,ballot_dumping4
+15,ballot dumping5,6807,ballot_dumping5
+16,ballot dumping6,107008,ballot_dumping6
+17,ballot dumping 7,52894,ballot_dumping_7
+18,ballot dumping 8,1708,ballot_dumping_8
+19,ballot harvesting 1,415570,ballot_harvesting_1
+20,ballot harvesting2,47934,ballot_harvesting2
+21,ballot harvesting 3,17228,ballot_harvesting_3
+22,ballot signatures 1,75751,ballot_signatures_1
+23,ballot signatures 2,17427,ballot_signatures_2
+24,ballot stuffing 1,29748,ballot_stuffing_1
+25,Biden clip saying he does fraud 1,282584,Biden_clip_saying_he_does_fraud_1
+26,cancelled ballot 1,32576,cancelled_ballot_1
+27,chinese ballots 1,12934,chinese_ballots_1
+28,color revolution 1,30620,color_revolution_1
+29,coup 1,475581,coup_1
+30,dead voters 1,486102,dead_voters_1
+31,dead voters 2,42347,dead_voters_2
+32,dead voters 3,33700,dead_voters_3
+33,dead voters 4,42549,dead_voters_4
+34,dead voters 5,19668,dead_voters_5
+35,dead voters 6,37022,dead_voters_6
+36,destroyed ballots 1,44005,destroyed_ballots_1
+37,destroyed ballots 2,26076,destroyed_ballots_2
+38,dhs watermarks 1,18262,dhs_watermarks_1
+40,drive-through voting 1,64381,drive-through_voting_1
+41,fake IDs 1,29742,fake_IDs_1
+42,granny farming 1,42561,granny_farming_1
+43,hacks 1,17702,hacks_1
+44,hacks 2,147833,hacks_2
+45,Hammer and scorecard 1,112809,Hammer_and_scorecard_1
+46,i did fraud 1,145681,i_did_fraud_1
+47,incorrect voting info 1,238865,incorrect_voting_info_1
+48,intimidation 1,178823,intimidation_1
+49,intimidation 2,115589,intimidation_2
+50,intimidation 3,7803,intimidation_3
+51,intimidation 4,22953,intimidation_4
+52,intimidation 5,6270,intimidation_5
+53,intimidation 6,855,intimidation_6
+54,intimidation 7,3388,intimidation_7
+55,intimidation 8,47077,intimidation_8
+56,late ballots 1,34104,late_ballots_1
+57,late ballots 2,29866,late_ballots_2
+58,late ballots 3,16552,late_ballots_3
+59,livestream 1,2301,livestream_1
+60,mail-in voting 1,144872,mail-in_voting_1
+61,misprinted ballots 1,69625,misprinted_ballots_1
+62,misprinted ballots 2,73820,misprinted_ballots_2
+63,misprinted ballots 3,12637,misprinted_ballots_3
+64,missing/found ballots 1,35093,missing_found_ballots_1
+65,missing/found ballots 2,21233,missing_found_ballots_2
+66,missing/found ballots 3,27825,missing_found_ballots_3
+67,missing/found ballots 4,1956,missing_found_ballots_4
+68,missing/found ballots 5,3288,missing_found_ballots_5
+69,more votes than registered 1,184034,more_votes_than_registered_1
+70,out of context content 1,31364,out_of_context_content_1
+71,out of context content 2,29156,out_of_context_content_2
+72,out of context content 3,22790,out_of_context_content_3
+73,out of context content 4,28167,out_of_context_content_4
+74,partisan counting 1,34386,partisan_counting_1
+75,partisan counting 2,70828,partisan_counting_2
+76,partisan counting 3,29779,partisan_counting_3
+77,partisan counting 4,10172,partisan_counting_4
+78,partisanship at polling places 1,168685,partisanship_at_polling_places_1
+79,partisanship at polling places 2,48535,partisanship_at_polling_places_2
+80,partisanship at polling places 3,21806,partisanship_at_polling_places_3
+81,polling stations 1,1072,polling_stations_1
+82,poll watchers 1,131018,poll_watchers_1
+83,poll watchers 10,37453,poll_watchers_10
+84,poll watchers 2,618168,poll_watchers_2
+85,poll watchers 3,103194,poll_watchers_3
+86,poll watchers 4,45905,poll_watchers_4
+87,poll watchers 5,93803,poll_watchers_5
+88,poll watchers 6,28755,poll_watchers_6
+89,poll watchers 7,61333,poll_watchers_7
+90,poll watchers 8,32109,poll_watchers_8
+91,poll watchers 9,3487,poll_watchers_9
+92,pre-filled ballots 1,64861,pre-filled_ballots_1
+93,premature victory 1,103516,premature_victory_1
+94,premature victory 2,141153,premature_victory_2
+95,premature victory 3,95316,premature_victory_3
+96,premature victory 4,25727,premature_victory_4
+97,premature victory 5,72905,premature_victory_5
+98,premature victory 6,4297,premature_victory_6
+99,protests1,28703,protests1
+100,protests 2,14807,protests_2
+101,protests 3,22139,protests_3
+102,rejection rates 1,142892,rejection_rates_1
+103,rejection rates 2,15836,rejection_rates_2
+104,resident fraud 1,70334,resident_fraud_1
+105,resident fraud 2,1844,resident_fraud_2
+106,sharpiegate 1,822477,sharpiegate_1
+107,shredded ballot applications 1,5536,shredded_ballot_applications_1
+108,shredded ballot applications1,71858,shredded_ballot_applications1
+109,stolen ballots1,19891,stolen_ballots1
+110,stolen ballots2,26786,stolen_ballots2
+111,stolen ballots3,23106,stolen_ballots3
+112,stolen ballots4,13596,stolen_ballots4
+113,stolen polling materials1,63450,stolen_polling_materials1
+114,stopthesteal 1,2888209,stopthesteal_1
+115,texas political director fraud1,213532,texas_political_director_fraud1
+116,Trump delegtimization 1,26689,Trump_delegtimization_1
+117,Trump delegtimization 2,11741,Trump_delegtimization_2
+118,Trump delegtimization 3,38805,Trump_delegtimization_3
+119,urban playbook 1,33998,urban_playbook_1
+120,usps missing ballots 1,158129,usps_missing_ballots_1
+121,vague fraud 1,58129,vague_fraud_1
+122,violence at polling place 1,69001,violence_at_polling_place_1
+123,violence at polling place 2,56633,violence_at_polling_place_2
+124,vote buying1,103989,vote_buying1
+125,vote buying2,2533,vote_buying2
+126,vote changing1,133934,vote_changing1
+127,vote counting videos 1,136095,vote_counting_videos_1
+128,vote counting videos 2,38850,vote_counting_videos_2
+129,vote counting videos 3,25521,vote_counting_videos_3
+130,vote counting videos 4,21746,vote_counting_videos_4
+131,vote counting videos 5,3409,vote_counting_videos_5
+132,vote counting videos 6,80152,vote_counting_videos_6
+133,vote count jumps 1,404847,vote_count_jumps_1
+134,vote count jumps 2,38970,vote_count_jumps_2
+135,voting machines 1,31883,voting_machines_1
+136,voting machines 2,3049,voting_machines_2
+137,voting machines 3,97867,voting_machines_3
+138,voting machines 4,34754,voting_machines_4
+139,voting machines 5,22227,voting_machines_5
+140,voting machines 6,28505,voting_machines_6
+141,voting machines 7,12689,voting_machines_7
+142,voting twice1,79136,voting_twice1
+143,voting twice2,52450,voting_twice2
+144,voting twice3,20755,voting_twice3
+145,voting twice4,29507,voting_twice4
+146,voting twice5,12247,voting_twice5
+147,voting twice6,1208,voting_twice6
+148,whistleblower 1,415614,whistleblower_1
+149,whistleblower 2,591838,whistleblower_2
+150,whistleblower 3,498366,whistleblower_3
+151,whistleblower 4,40534,whistleblower_4
+152,whistleblower 5,67306,whistleblower_5

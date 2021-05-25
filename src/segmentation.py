@@ -8,10 +8,13 @@ def get_aggregated_follower_counts(group,removed):
 
     return group[~group['user_screen_name'].isin(removed)]['user_followers_count'].to_list()
 
-def aggregate(raw_df, freq=5, removed=[]):
+def aggregate(raw_df, freq=5, removed=[], to_share=False):
     #Split raw_df at freq intervals
     raw_df['created_at'] =pd.DatetimeIndex(raw_df['created_at'])
     raw_df['total_tweets'] = np.ones(raw_df.shape[0])
+    if to_share is True: 
+        rounded = 10*np.round(raw_df['user_followers_count'].values  /10)
+        raw_df['user_followers_count'] = rounded.astype('int')
     grouped = raw_df.groupby(pd.Grouper(key='created_at',freq=str(freq)+'Min'))
 
     #Apply banned user filter

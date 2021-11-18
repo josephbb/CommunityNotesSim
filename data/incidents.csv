@@ -1,0 +1,463 @@
+,incident,count,incident_name
+0,ballot box: CA Key in Box,4525,ballot_box:_CA_Key_in_Box
+1,ballot box: Collecting After Election,24617,ballot_box:_Collecting_After_Election
+2,ballot box: Fire Baldwin Park,3261,ballot_box:_Fire_Baldwin_Park
+3,ballot box: Franklin County Police,4624,ballot_box:_Franklin_County_Police
+4,ballot box: MA fire,49,ballot_box:_MA_fire
+5,ballot box: Observe Boxes,83,ballot_box:_Observe_Boxes
+6,ballot box: PA Civilian Removal,90496,ballot_box:_PA_Civilian_Removal
+7,ballot box: Trash Can Disguise,88,ballot_box:_Trash_Can_Disguise
+8,ballot box: Unofficial Boxes CA,216968,ballot_box:_Unofficial_Boxes_CA
+9,ballot box: WA Start Fire Suggestion,2,ballot_box:_WA_Start_Fire_Suggestion
+10,ballot harvesting: Baltimore elderly votes,16352,ballot_harvesting:_Baltimore_elderly_votes
+11,Ballot harvesting: Baltimore elderly votes,32703,Ballot_harvesting:_Baltimore_elderly_votes
+12,ballot harvesting: Biden Texas Director,127833,ballot_harvesting:_Biden_Texas_Director
+13,Ballot harvesting: Biden Texas Director,184,Ballot_harvesting:_Biden_Texas_Director
+14,ballot harvesting: Granny farming ,46861,ballot_harvesting:_Granny_farming_
+15,ballot harvesting: Ilhan Omar Project Veritas Video ,1251566,ballot_harvesting:_Ilhan_Omar_Project_Veritas_Video_
+16,ballot harvesting: Lebron/Bloomberg,48466,ballot_harvesting:_Lebron_Bloomberg
+17,ballot harvesting: Michigan Union,2445,ballot_harvesting:_Michigan_Union
+18,Ballot harvesting: Minnesota Somali voters,2445,Ballot_harvesting:_Minnesota_Somali_voters
+19,ballot harvesting: new Michigan law,8250,ballot_harvesting:_new_Michigan_law
+20,ballot harvesting: Paid 500 to vote,73,ballot_harvesting:_Paid_500_to_vote
+21,"Ballot harvesting: Reseda, California",29811,"Ballot_harvesting:_Reseda,_California"
+22,Ballot harvesting: San Antonio,5,Ballot_harvesting:_San_Antonio
+23,Ballot harvesting: Texas ballot chasers,137462,Ballot_harvesting:_Texas_ballot_chasers
+24,ballot harvesting: Washington state,60,ballot_harvesting:_Washington_state
+25,ballot harvesting: Washington State Wrong Addresses,58,ballot_harvesting:_Washington_State_Wrong_Addresses
+26,ballot stuffing 1,10263,ballot_stuffing_1
+27,ballot stuffing: CT fraud,8,ballot_stuffing:_CT_fraud
+28,ballot stuffing: Don Jr Trump Army,4443,ballot_stuffing:_Don_Jr_Trump_Army
+29,ballot stuffing: Emergency Vote Boxes,181,ballot_stuffing:_Emergency_Vote_Boxes
+30,ballot stuffing: MI ballots not on voter rolls,60181,ballot_stuffing:_MI_ballots_not_on_voter_rolls
+31,ballot stuffing: MI Van Votes,9254,ballot_stuffing:_MI_Van_Votes
+32,ballot stuffing: MI wagons suitcases and coolers,23952,ballot_stuffing:_MI_wagons_suitcases_and_coolers
+33,ballot stuffing: NJ poll watcher,300,ballot_stuffing:_NJ_poll_watcher
+34,ballot stuffing: No down ticket,9963,ballot_stuffing:_No_down_ticket
+35,ballot stuffing: Short Lines Fraud,12704,ballot_stuffing:_Short_Lines_Fraud
+36,ballot stuffing: VA magic ballots,323,ballot_stuffing:_VA_magic_ballots
+37,civil war: Anglin Get Ready,20,civil_war:_Anglin_Get_Ready
+38,civil war: general ticket,1192374,civil_war:_general_ticket
+39,civil war: RT Civil War Doc,6,civil_war:_RT_Civil_War_Doc
+40,coup: color revolution,101224,coup:_color_revolution
+41,coup: DC Shutdown,56906,coup:_DC_Shutdown
+42,coup: Democratic Security,2,coup:_Democratic_Security
+43,coup: Frozen Election,257,coup:_Frozen_Election
+44,coup: Leftist Major Cities Coup,757,coup:_Leftist_Major_Cities_Coup
+45,coup: MN Breitbart documents,28455,coup:_MN_Breitbart_documents
+46,coup: NV Early Call Coup,4196,coup:_NV_Early_Call_Coup
+47,coup: SECDEF Threat,8014,coup:_SECDEF_Threat
+48,coup: sunrise movement,1422,coup:_sunrise_movement
+49,dead voters: 1900-01-01 birthday,101300,dead_voters:_1900-01-01_birthday
+50,dead voters: 350K on voter rolls,61676,dead_voters:_350K_on_voter_rolls
+51,dead voters: FL dead wife,264,dead_voters:_FL_dead_wife
+52,dead voters: FL registration attempt,30446,dead_voters:_FL_registration_attempt
+53,dead voters: general ticket,2801579,dead_voters:_general_ticket
+54,dead voters: huckabee votes for dead relatives,105671,dead_voters:_huckabee_votes_for_dead_relatives
+55,dead voters: Jason D. Dawdy,4,dead_voters:_Jason_D._Dawdy
+56,dead voters: list of 100+,4441,dead_voters:_list_of_100+
+57,dead voters: NY post ballots,13121,dead_voters:_NY_post_ballots
+58,dead voters: oregon friend,2352,dead_voters:_oregon_friend
+59,dead voters: registering thousands of dead voters,3,dead_voters:_registering_thousands_of_dead_voters
+60,dead voters: southfront article,2,dead_voters:_southfront_article
+61,dead voters: team trump,13771,dead_voters:_team_trump
+62,dead voters: TX registrations,292,dead_voters:_TX_registrations
+63,dead voters: voters in their 170s,27211,dead_voters:_voters_in_their_170s
+64,dead voters: William Bradeley,133919,dead_voters:_William_Bradeley
+65,dhs watermarks 1,143,dhs_watermarks_1
+66,Digital dumps: AARP Aggregate,362,Digital_dumps:_AARP_Aggregate
+67,"Digital dumps: Fairfax 100,000 ballots",331,"Digital_dumps:_Fairfax_100,000_ballots"
+68,Digital dumps: Germany Ambassador,63544,Digital_dumps:_Germany_Ambassador
+69,Digital dumps: Jim Holt WI Dumps,2441,Digital_dumps:_Jim_Holt_WI_Dumps
+70,Digital dumps: Jo Jorgensen PA,628,Digital_dumps:_Jo_Jorgensen_PA
+71,"Digital dumps: Michigan 128,000 votes",244421,"Digital_dumps:_Michigan_128,000_votes"
+72,False Victory: AZ early FB Call,3,False_Victory:_AZ_early_FB_Call
+73,False Victory: Early FL Call,2140,False_Victory:_Early_FL_Call
+74,False Victory: Eric Trump Calls PA,1800,False_Victory:_Eric_Trump_Calls_PA
+75,False Victory: Facebook Labeling of PA Call,23,False_Victory:_Facebook_Labeling_of_PA_Call
+76,False Victory: GA called for Trump,9277,False_Victory:_GA_called_for_Trump
+77,False Victory: MO early call,10,False_Victory:_MO_early_call
+78,False Victory: Murphy Call for Booker,121,False_Victory:_Murphy_Call_for_Booker
+79,False Victory: NC Early Call,2531,False_Victory:_NC_Early_Call
+80,False Victory: OAN Trump Won,155,False_Victory:_OAN_Trump_Won
+81,False Victory: PA Attorney General Calls Election,120685,False_Victory:_PA_Attorney_General_Calls_Election
+82,False Victory: PA early calls,1847,False_Victory:_PA_early_calls
+83,False Victory: President Elect Status Revoked,63739,False_Victory:_President_Elect_Status_Revoked
+84,False Victory: RealClearPolitics Rescinds Call of PA,40547,False_Victory:_RealClearPolitics_Rescinds_Call_of_PA
+85,False Victory: Tillis Early Call,138,False_Victory:_Tillis_Early_Call
+86,False Victory: Varitimos Declaration for Trump Win,8,False_Victory:_Varitimos_Declaration_for_Trump_Win
+87,False Victory: WI SOS Website Results,26841,False_Victory:_WI_SOS_Website_Results
+88,Georgia scam,36116,Georgia_scam
+89,Ineligible Voters: 2 Million Extra,8302,Ineligible_Voters:_2_Million_Extra
+90,Ineligible Voters: CT Registered Voters,20,Ineligible_Voters:_CT_Registered_Voters
+91,Ineligible Voters: Illegal Immigrant Registrations,1949,Ineligible_Voters:_Illegal_Immigrant_Registrations
+92,ineligible voters: nv residency violations,209773,ineligible_voters:_nv_residency_violations
+93,Ineligible Voters: TX Illegal Voters,2877,Ineligible_Voters:_TX_Illegal_Voters
+94,Ineligible Voters: Undocumented WA,638,Ineligible_Voters:_Undocumented_WA
+95,Ineligible Voters: WA Ineligible Sister,5389,Ineligible_Voters:_WA_Ineligible_Sister
+96,In Person Fraud: Blind Relatives,5389,In_Person_Fraud:_Blind_Relatives
+97,In Person Fraud: CT ID Laws,17,In_Person_Fraud:_CT_ID_Laws
+98,In Person Fraud: Mongomery Maryland,21905,In_Person_Fraud:_Mongomery_Maryland
+99,In Person Fraud: OHare Airport,24762,In_Person_Fraud:_OHare_Airport
+100,In Person Fraud: Seattle No Verification,262,In_Person_Fraud:_Seattle_No_Verification
+101, intimdation: Trump Chanting,29759,_intimdation:_Trump_Chanting
+102,intimidation: Bannon beheading Fauci,18022,intimidation:_Bannon_beheading_Fauci
+103,intimidation: BLM/Antifa Intimidation Plans,10824,intimidation:_BLM_Antifa_Intimidation_Plans
+104,intimidation: blue dots,28,intimidation:_blue_dots
+105,intimidation: Brooklyn Trump Supporter,9604,intimidation:_Brooklyn_Trump_Supporter
+106,intimidation: CA BLM protest,1865,intimidation:_CA_BLM_protest
+107,intimidation: Devin Nunes Mobile Home Fire,22894,intimidation:_Devin_Nunes_Mobile_Home_Fire
+108,intimidation: FL Antifa and Loomer,213,intimidation:_FL_Antifa_and_Loomer
+109,intimidation: FL bomb threat,6,intimidation:_FL_bomb_threat
+110,intimidation: FL Military Outfit,11583,intimidation:_FL_Military_Outfit
+111,intimidation: FL sherrif,6384,intimidation:_FL_sherrif
+112,intimidation: FL trump police officer,41649,intimidation:_FL_trump_police_officer
+113,intimidation: LA armed man,17,intimidation:_LA_armed_man
+114,intimidation: Make your wife vote,6428,intimidation:_Make_your_wife_vote
+115,intimidation: MI poll watchers,73078,intimidation:_MI_poll_watchers
+116,intimidation: NC BLM,43966,intimidation:_NC_BLM
+117,intimidation: NC gun,8510,intimidation:_NC_gun
+118,intimidation: NY long island,2287,intimidation:_NY_long_island
+119,intimidation: OH pro-life protesters,3,intimidation:_OH_pro-life_protesters
+120,intimidation: OH Trump Supporters Block Polls,14,intimidation:_OH_Trump_Supporters_Block_Polls
+121,intimidation: PA armed men confront vote counter,68068,intimidation:_PA_armed_men_confront_vote_counter
+122,intimidation: PA State Constable,489,intimidation:_PA_State_Constable
+123,intimidation: Proud Boys Bomb Threat,3431,intimidation:_Proud_Boys_Bomb_Threat
+124,intimidation: Proud Boys Email,80563,intimidation:_Proud_Boys_Email
+125,intimidation: SC pink hair scream,123,intimidation:_SC_pink_hair_scream
+126,intimidation: threat letter,4368,intimidation:_threat_letter
+127,intimidation: trump calls for monitors,30707,intimidation:_trump_calls_for_monitors
+128,intimidation: Warning of Violence Agians POC/LGBTQ,6846,intimidation:_Warning_of_Violence_Agians_POC_LGBTQ
+129,intimidation: woman mobbed by trump supporters,2,intimidation:_woman_mobbed_by_trump_supporters
+130,Judicial Watch alleges stolen election,298,Judicial_Watch_alleges_stolen_election
+131,Late: Allegheny Not Stamping,19,Late:_Allegheny_Not_Stamping
+132,Late: Extended Ballots,92887,Late:_Extended_Ballots
+133,Late: NC Stolen,4611,Late:_NC_Stolen
+134,Late: OK Ballots Found,16236,Late:_OK_Ballots_Found
+135,Late: PA Late Ballots,234,Late:_PA_Late_Ballots
+136,Late: USPS After Election,12393,Late:_USPS_After_Election
+137,Late: USPS Driver,35,Late:_USPS_Driver
+138,lost: AZ rock ballots,30440,lost:_AZ_rock_ballots
+139,lost: Biden truck ballots,497,lost:_Biden_truck_ballots
+140,lost: CA dumpster,68778,lost:_CA_dumpster
+141,lost: CA stolen ballots,5948,lost:_CA_stolen_ballots
+142,lost: CT dumped,1,lost:_CT_dumped
+143,lost: CT under bridge,207,lost:_CT_under_bridge
+144,lost: desert ballots,390,lost:_desert_ballots
+145,lost: FL shredded ballots,14,lost:_FL_shredded_ballots
+146,lost: GA found in dumpster,156992,lost:_GA_found_in_dumpster
+147,lost: Harris County,5,lost:_Harris_County
+148,lost: KY dumped ballots,385,lost:_KY_dumped_ballots
+149,"lost: LA,TX dumpster ballots",426,"lost:_LA,TX_dumpster_ballots"
+150,lost: MA primary ballots,22961,lost:_MA_primary_ballots
+151,lost: multistate dumped ballots,500,lost:_multistate_dumped_ballots
+152,lost: multistate thrown ballots,46367,lost:_multistate_thrown_ballots
+153,lost: NJ dumpster,72540,lost:_NJ_dumpster
+154,lost: NJ Mail Photo,3552,lost:_NJ_Mail_Photo
+155,lost: NV trash ballots,17193,lost:_NV_trash_ballots
+156,lost: OH 2014,1121,lost:_OH_2014
+157,lost: OH river ballot boxes,9,lost:_OH_river_ballot_boxes
+158,lost: OH thrown ballots,1,lost:_OH_thrown_ballots
+159,lost: PA 300-500k,5760,lost:_PA_300-500k
+160,lost: PA 40k missing,6037,lost:_PA_40k_missing
+161,lost: PA 9 discarded,261209,lost:_PA_9_discarded
+162,"lost: PA,GA dumpster ballots",44037,"lost:_PA,GA_dumpster_ballots"
+163,lost: PA shredded ballot applications,105105,lost:_PA_shredded_ballot_applications
+164,lost: Sherrif Nehls,3359,lost:_Sherrif_Nehls
+165,lost: VA 60k undelivered ballots,1920,lost:_VA_60k_undelivered_ballots
+166,lost: VA burned ballots,105667,lost:_VA_burned_ballots
+167,lost: WA harvestable ballots,83,lost:_WA_harvestable_ballots
+168,lost: WA stolen ballots,2,lost:_WA_stolen_ballots
+169,lost: WA thrown ballots,5,lost:_WA_thrown_ballots
+170,lost: WI ditch ballots,22550,lost:_WI_ditch_ballots
+171,Machines: Changed Vote TX,28334,Machines:_Changed_Vote_TX
+172,Machines: ES&S Touchscreens,161,Machines:_ES&S_Touchscreens
+173,Machines: Franklin/Spalding County Hack,2220,Machines:_Franklin_Spalding_County_Hack
+174,Machines: generic with dem steal,3,Machines:_generic_with_dem_steal
+175,Machines: Ivanka patent,6678,Machines:_Ivanka_patent
+176,Machines: Louisiana Changed Votes,197,Machines:_Louisiana_Changed_Votes
+177,Machines: MI Power Outages,13792,Machines:_MI_Power_Outages
+178,Machines: No Ink Green Bay,17772,Machines:_No_Ink_Green_Bay
+179,Machines: NYC Broken,21163,Machines:_NYC_Broken
+180,Machines: OH Breakdowns,91,Machines:_OH_Breakdowns
+181,Machines: Old Machines,53,Machines:_Old_Machines
+182,Machines: Pre-Programmed 2016,35,Machines:_Pre-Programmed_2016
+183,Machines: Scranton Disruptions,64301,Machines:_Scranton_Disruptions
+184,Machines: Westmoreland machines down,58096,Machines:_Westmoreland_machines_down
+185,: maidengate,184315,:_maidengate
+186,MI and PA dead voting list,130864,MI_and_PA_dead_voting_list
+187,Other: Allegheny County Family Votes for each other,9183,Other:_Allegheny_County_Family_Votes_for_each_other
+188,Other: AZ Fraud Claims,477561,Other:_AZ_Fraud_Claims
+189,Other: Ballot Fraud Ballots in Bins,1,Other:_Ballot_Fraud_Ballots_in_Bins
+190,Other: Ballot Fraud Poll Watcher Votes,3771,Other:_Ballot_Fraud_Poll_Watcher_Votes
+191,Other: Candidate Fraud Biden App,18,Other:_Candidate_Fraud_Biden_App
+192,Other: Candidate Fraud Biden Fraud Quote,207592,Other:_Candidate_Fraud_Biden_Fraud_Quote
+193,Other: Candidate Fraud Hannity Misquote,36912,Other:_Candidate_Fraud_Hannity_Misquote
+194,Other: Candidate Fraud Newsom Voting,57,Other:_Candidate_Fraud_Newsom_Voting
+195,Other: DeKalb Rejected Ballots,286139,Other:_DeKalb_Rejected_Ballots
+196,Other: Delaware County Election Results,3723,Other:_Delaware_County_Election_Results
+197,Other: drive through voting illegal driver's licenses,32536,Other:_drive_through_voting_illegal_driver's_licenses
+198,Other: Fort Russ Disinformation,128,Other:_Fort_Russ_Disinformation
+199,Other: Fulton County Water Pipe,3397,Other:_Fulton_County_Water_Pipe
+200,Other: Manufactured/Stolen Early Votes,4258,Other:_Manufactured_Stolen_Early_Votes
+201,Other: Marion County Ballots,1,Other:_Marion_County_Ballots
+202,Other: PA forced provisional ballots,170,Other:_PA_forced_provisional_ballots
+203,Other: PA GOP Observers,3300,Other:_PA_GOP_Observers
+204,Other: PA Teachers,244,Other:_PA_Teachers
+205,Other: PA Videotaping,215,Other:_PA_Videotaping
+206,Other: PragerU Video,2251,Other:_PragerU_Video
+207,Other: provisional ballots,353,Other:_provisional_ballots
+208,Other: provisional ballots not counted in red states,77,Other:_provisional_ballots_not_counted_in_red_states
+209,Other: QAnon Claims,2528,Other:_QAnon_Claims
+210,Other: QAnon Coup D'Etat,951,Other:_QAnon_Coup_D'Etat
+211,Other: Stop The Steal Pushed,1633907,Other:_Stop_The_Steal_Pushed
+212,Other: Texas Howley Video Claims,1,Other:_Texas_Howley_Video_Claims
+213,Other: Trump Campaign Quote,100543,Other:_Trump_Campaign_Quote
+214,Other: trump tweet censored,378429,Other:_trump_tweet_censored
+215,Other: TX Disabled Residents,75739,Other:_TX_Disabled_Residents
+216,Other: urban playbook,27182,Other:_urban_playbook
+217,Other: Venezuela Methods,123576,Other:_Venezuela_Methods
+218,Other: Voter Fraud Cases,5542,Other:_Voter_Fraud_Cases
+219,Other: WA 2004 Election,18,Other:_WA_2004_Election
+220,Other: WA Inslee Audit,184,Other:_WA_Inslee_Audit
+221,Other: WA Mail-In Fraud,762,Other:_WA_Mail-In_Fraud
+222,Other: WA Miscellaneous Fraud,3149,Other:_WA_Miscellaneous_Fraud
+223,Other: WA Rejected Ballots,441,Other:_WA_Rejected_Ballots
+224,Other: WA State Fraud ,3,Other:_WA_State_Fraud_
+225,partisanship at polling places 1,74393,partisanship_at_polling_places_1
+226,partisanship at polling places 2,2676,partisanship_at_polling_places_2
+227,partisan vcr:  AZ hand recount required,3148,partisan_vcr:__AZ_hand_recount_required
+228,partisan vcr:  Connecticut ignored ballots,1,partisan_vcr:__Connecticut_ignored_ballots
+229,partisan vcr:  Democrats train officials,58,partisan_vcr:__Democrats_train_officials
+230,partisan vcr:  Detroit provisional ballots,21081,partisan_vcr:__Detroit_provisional_ballots
+231,partisan vcr:  Erie ballots thrown away,49127,partisan_vcr:__Erie_ballots_thrown_away
+232,partisan vcr:  Georgia confidence,101649,partisan_vcr:__Georgia_confidence
+233,partisan vcr:  Joke ballot ripping,6200,partisan_vcr:__Joke_ballot_ripping
+234,partisan vcr:  Kristie Alley Facebook Retweet,1525,partisan_vcr:__Kristie_Alley_Facebook_Retweet
+235,partisan vcr:  live tv fraud,28126,partisan_vcr:__live_tv_fraud
+236,partisan vcr:  Michigan delays,996,partisan_vcr:__Michigan_delays
+237,partisan vcr:  Michigan Republican applications,5224,partisan_vcr:__Michigan_Republican_applications
+238,partisan vcr:  Nevada whistleblower,714686,partisan_vcr:__Nevada_whistleblower
+239,partisan vcr:  Pennsylvania delays,45185,partisan_vcr:__Pennsylvania_delays
+240,partisan vcr:  Pennsylvania inner envelopes,583,partisan_vcr:__Pennsylvania_inner_envelopes
+241,partisan vcr:  Pennsylvania poll worker empty ballots,94004,partisan_vcr:__Pennsylvania_poll_worker_empty_ballots
+242,partisan vcr:  Philadelphia destroyed ballots,181,partisan_vcr:__Philadelphia_destroyed_ballots
+243,partisan vcr:  Philadelphia missing supervisor,118434,partisan_vcr:__Philadelphia_missing_supervisor
+244,partisan vcr:  Philadelphia separate lines,12395,partisan_vcr:__Philadelphia_separate_lines
+245,partisan vcr: sharpiegate,1066762,partisan_vcr:_sharpiegate
+246,partisan vcr:  Washington corrupt officials,14,partisan_vcr:__Washington_corrupt_officials
+247,Physical Mail Fraud: AARP Bachmann,23931,Physical_Mail_Fraud:_AARP_Bachmann
+248,Physical Mail Fraud: ACLU Signatures,10201,Physical_Mail_Fraud:_ACLU_Signatures
+249,Physical Mail Fraud: CA Received Ballot,18,Physical_Mail_Fraud:_CA_Received_Ballot
+250,Physical Mail Fraud: CCP Fake Ballots,1175,Physical_Mail_Fraud:_CCP_Fake_Ballots
+251,Physical Mail Fraud: Cheat-by-mail,126,Physical_Mail_Fraud:_Cheat-by-mail
+252,Physical Mail Fraud: Chinese Language Mail-In Fraud,107,Physical_Mail_Fraud:_Chinese_Language_Mail-In_Fraud
+253,Physical Mail Fraud: Colorado Ballot Holes,45608,Physical_Mail_Fraud:_Colorado_Ballot_Holes
+254,Physical Mail Fraud: COVID Bioweapon,6,Physical_Mail_Fraud:_COVID_Bioweapon
+255,Physical Mail Fraud: CT Pencils,133,Physical_Mail_Fraud:_CT_Pencils
+256,Physical Mail Fraud: Democratic TX Mayor,132053,Physical_Mail_Fraud:_Democratic_TX_Mayor
+257,Physical Mail Fraud: Fayette County,434,Physical_Mail_Fraud:_Fayette_County
+258,Physical Mail Fraud: FEC Chair,268501,Physical_Mail_Fraud:_FEC_Chair
+259,Physical Mail Fraud: GA Democrats Fixing Ballots,2846,Physical_Mail_Fraud:_GA_Democrats_Fixing_Ballots
+260,Physical Mail Fraud: Hidden Absentee Ballot,11030,Physical_Mail_Fraud:_Hidden_Absentee_Ballot
+261,Physical Mail Fraud: Hunterdon County Fraud,519,Physical_Mail_Fraud:_Hunterdon_County_Fraud
+262,Physical Mail Fraud: Iowa Pre-Filled Ballots,37,Physical_Mail_Fraud:_Iowa_Pre-Filled_Ballots
+263,Physical Mail Fraud: KY Turnout,324,Physical_Mail_Fraud:_KY_Turnout
+264,Physical Mail Fraud: Mail vs. In-Person Fraud,82,Physical_Mail_Fraud:_Mail_vs._In-Person_Fraud
+265,Physical Mail Fraud: MI Drops Fake Ballots,2282,Physical_Mail_Fraud:_MI_Drops_Fake_Ballots
+266,Physical Mail Fraud: MI Whistleblower,89998,Physical_Mail_Fraud:_MI_Whistleblower
+267,Physical Mail Fraud: Nebraska Pre-Filled,10,Physical_Mail_Fraud:_Nebraska_Pre-Filled
+268,Physical Mail Fraud: Newsom VBM,362,Physical_Mail_Fraud:_Newsom_VBM
+269,Physical Mail Fraud: NY Post Confession,56700,Physical_Mail_Fraud:_NY_Post_Confession
+270,Physical Mail Fraud: NY Pre-Filled Biden,52288,Physical_Mail_Fraud:_NY_Pre-Filled_Biden
+271,Physical Mail Fraud: Obama Printers,3775,Physical_Mail_Fraud:_Obama_Printers
+272,Physical Mail Fraud: PA Court Signature Ruling,16595,Physical_Mail_Fraud:_PA_Court_Signature_Ruling
+273,Physical Mail Fraud: PA Court Time Ruling,619,Physical_Mail_Fraud:_PA_Court_Time_Ruling
+274,Physical Mail Fraud: PA Misprinted Corrections,104419,Physical_Mail_Fraud:_PA_Misprinted_Corrections
+275,Physical Mail Fraud: PA Printed Ballots,7419,Physical_Mail_Fraud:_PA_Printed_Ballots
+276,Physical Mail Fraud: PDF Ballots,3,Physical_Mail_Fraud:_PDF_Ballots
+277,Physical Mail Fraud: Philly Destroying Envelopes,95426,Physical_Mail_Fraud:_Philly_Destroying_Envelopes
+278,Physical Mail Fraud: Postal Worker Affiliation,824,Physical_Mail_Fraud:_Postal_Worker_Affiliation
+279,Physical Mail Fraud: Press Secretary,1862,Physical_Mail_Fraud:_Press_Secretary
+280,Physical Mail Fraud: Romania and Ukraine Allegations,4,Physical_Mail_Fraud:_Romania_and_Ukraine_Allegations
+281,Physical Mail Fraud: Swing State Fraud,263,Physical_Mail_Fraud:_Swing_State_Fraud
+282,Physical Mail Fraud: Throw Out Ballots,13,Physical_Mail_Fraud:_Throw_Out_Ballots
+283,Physical Mail Fraud: Trump Asks Late,10953,Physical_Mail_Fraud:_Trump_Asks_Late
+284,Physical Mail Fraud: Trump Mar-a-Lago VBM,7994,Physical_Mail_Fraud:_Trump_Mar-a-Lago_VBM
+285,Physical Mail Fraud: USPS PA Whistleblower,125028,Physical_Mail_Fraud:_USPS_PA_Whistleblower
+286,Physical Mail Fraud: WA Election Postmark Date,3,Physical_Mail_Fraud:_WA_Election_Postmark_Date
+287,Physical Mail Fraud: WA fraud claims,927,Physical_Mail_Fraud:_WA_fraud_claims
+288,Physical Mail Fraud: WA Stolen Ballot Bag,11663,Physical_Mail_Fraud:_WA_Stolen_Ballot_Bag
+289,Physical Mail Mistake: NY Absentee Suppression,1,Physical_Mail_Mistake:_NY_Absentee_Suppression
+290,Physical Mail Mistakes: 4 Ballots New Address,66826,Physical_Mail_Mistakes:_4_Ballots_New_Address
+291,Physical Mail Mistakes: Additional Ballots,103,Physical_Mail_Mistakes:_Additional_Ballots
+292,Physical Mail Mistakes: CA absentee ballots,6,Physical_Mail_Mistakes:_CA_absentee_ballots
+293,Physical Mail Mistakes: CA rejects mistakes,15,Physical_Mail_Mistakes:_CA_rejects_mistakes
+294,Physical Mail Mistakes: Deceased and Inactive CA,54582,Physical_Mail_Mistakes:_Deceased_and_Inactive_CA
+295,Physical Mail Mistakes: Duval County,21,Physical_Mail_Mistakes:_Duval_County
+296,Physical Mail Mistakes: Knox County,590,Physical_Mail_Mistakes:_Knox_County
+297,Physical Mail Mistakes: Marked Ballot,76,Physical_Mail_Mistakes:_Marked_Ballot
+298,Physical Mail Mistakes: MI Misprints for Troops,66961,Physical_Mail_Mistakes:_MI_Misprints_for_Troops
+299,Physical Mail Mistakes: Misprints GA,836,Physical_Mail_Mistakes:_Misprints_GA
+300,Physical Mail Mistakes: NJ Ballot to AL,459,Physical_Mail_Mistakes:_NJ_Ballot_to_AL
+301,Physical Mail Mistakes: NJ Mislabeled Ballots,15007,Physical_Mail_Mistakes:_NJ_Mislabeled_Ballots
+302,Physical Mail Mistakes: NJ Undeliverable Ballots,6846,Physical_Mail_Mistakes:_NJ_Undeliverable_Ballots
+303,Physical Mail Mistakes: NYPost Ballot Typo,43889,Physical_Mail_Mistakes:_NYPost_Ballot_Typo
+304,Physical Mail Mistakes: TikTok Voting,26,Physical_Mail_Mistakes:_TikTok_Voting
+305,poll watchers: Infographic Picture,518,poll_watchers:_Infographic_Picture
+306,poll watchers: Pennsylvania assault,3,poll_watchers:_Pennsylvania_assault
+307,poll watchers: Philly Biden Mask,1,poll_watchers:_Philly_Biden_Mask
+308,poll watchers: Philly Denied entry,179391,poll_watchers:_Philly_Denied_entry
+309,poll watchers: Philly denied entry 2,296469,poll_watchers:_Philly_denied_entry_2
+310,poll watchers: Philly no entry list,209298,poll_watchers:_Philly_no_entry_list
+311,poll watchers: Political merchandise,1,poll_watchers:_Political_merchandise
+312,poll watchers: Threats of violence,22,poll_watchers:_Threats_of_violence
+313,poll watchers: Trump suit,1152,poll_watchers:_Trump_suit
+314,Prominent Person: Brad Friedman,132,Prominent_Person:_Brad_Friedman
+315,Prominent Person: Chanel Rion Memo,40026,Prominent_Person:_Chanel_Rion_Memo
+316,Prominent Person: Clay Higgins,198,Prominent_Person:_Clay_Higgins
+317,Prominent Person: Crowder MI Claims,5335,Prominent_Person:_Crowder_MI_Claims
+318,Prominent Person: Cuddy Camaro,2089,Prominent_Person:_Cuddy_Camaro
+319,Prominent Person: Darin Southam,68883,Prominent_Person:_Darin_Southam
+320,Prominent Person: Ghost Ballots,23231,Prominent_Person:_Ghost_Ballots
+321,Prominent Person: Jody Hice,3550,Prominent_Person:_Jody_Hice
+322,Prominent Person: Margarita Simonyan Tweet,178,Prominent_Person:_Margarita_Simonyan_Tweet
+323,Prominent Person: Marjorie Green STS,1050,Prominent_Person:_Marjorie_Green_STS
+324,Prominent Person: O'Keefe NYC Fraud,81421,Prominent_Person:_O'Keefe_NYC_Fraud
+325,Prominent Person: Press Secretary Fraud,24637,Prominent_Person:_Press_Secretary_Fraud
+326,"Prominent Person: RNC 11,000 Claims",63473,"Prominent_Person:_RNC_11,000_Claims"
+327,Prominent Person: Rubio Private Vehicles,2,Prominent_Person:_Rubio_Private_Vehicles
+328,Prominent Person: Tom Fitton Livestream VBM,1725,Prominent_Person:_Tom_Fitton_Livestream_VBM
+329,protest: Black Lives Matter plaza unrest,1146,protest:_Black_Lives_Matter_plaza_unrest
+330,protests: left organizing,132,protests:_left_organizing
+331,protests: million MAGA march,100478,protests:_million_MAGA_march
+332,protests: portland unrest,4272,protests:_portland_unrest
+333,protests: reused protest footage,102,protests:_reused_protest_footage
+334,protests: stop the steal instructions,361,protests:_stop_the_steal_instructions
+335,protests: stop the steal rallies,466591,protests:_stop_the_steal_rallies
+336,riot: antifa burning things down,92051,riot:_antifa_burning_things_down
+337,riot: antifa plans,170,riot:_antifa_plans
+338,riot: bjork video,146,riot:_bjork_video
+339,riot: crimethinc,9458,riot:_crimethinc
+340,riot: democrat-led election violence,4890,riot:_democrat-led_election_violence
+341,riot: mis-framed trump email,977,riot:_mis-framed_trump_email
+342,riot: nigel farage prediction,21199,riot:_nigel_farage_prediction
+343,riot: proud boys stabbed by blm,1069,riot:_proud_boys_stabbed_by_blm
+344,riot: riot and looting around elections,251,riot:_riot_and_looting_around_elections
+345,riot: stacks of bricks,19,riot:_stacks_of_bricks
+346,riot: violence agianst antifa,5302,riot:_violence_agianst_antifa
+347,Statistics: > 100% Voter Turnout in Swing States,1055,Statistics:_>_100%_Voter_Turnout_in_Swing_States
+348,Statistics: 2% Strategy ,66,Statistics:_2%_Strategy_
+349,Statistics: 98K PA Voters,41958,Statistics:_98K_PA_Voters
+350,Statistics: African-American Ballot Rejections,7230,Statistics:_African-American_Ballot_Rejections
+351,Statistics: Benford's Law,78210,Statistics:_Benford's_Law
+352,Statistics: Chinese Language Election Storm,835,Statistics:_Chinese_Language_Election_Storm
+353,Statistics: Cities That Matter,104064,Statistics:_Cities_That_Matter
+354,Statistics: District 21 CA,249,Statistics:_District_21_CA
+355,Statistics: GA Varieties,1049,Statistics:_GA_Varieties
+356,Statistics: JW Counties Over 100%,6905,Statistics:_JW_Counties_Over_100%
+357,Statistics: Kentucky Absentee Fraud,187,Statistics:_Kentucky_Absentee_Fraud
+358,Statistics: Kentucky Fraud,1217,Statistics:_Kentucky_Fraud
+359,Statistics: Math Video,34217,Statistics:_Math_Video
+360,Statistics: Numerical Anomalies,41817,Statistics:_Numerical_Anomalies
+361,Statistics: Precinct 538 FL,184,Statistics:_Precinct_538_FL
+362,Statistics: Wisconsin Votes > Registered,100952,Statistics:_Wisconsin_Votes_>_Registered
+363,suppression: robocall stay safe,10943,suppression:_robocall_stay_safe
+364,supression: FL can't pay fines,47,supression:_FL_can't_pay_fines
+365,supression: GA lock down,60269,supression:_GA_lock_down
+366,supression: GA long lines,48784,supression:_GA_long_lines
+367,supression: GA national guard,561,supression:_GA_national_guard
+368,supression: ICE monitoring polls,70,supression:_ICE_monitoring_polls
+369,supression: NC BLM pepper spray,56303,supression:_NC_BLM_pepper_spray
+370,supression: NJ disabled only,1046,supression:_NJ_disabled_only
+371,supression: NJ not allowed to vote,386,supression:_NJ_not_allowed_to_vote
+372,supression: NV technical difficulties,249,supression:_NV_technical_difficulties
+373,supression: NY police and PPE,138287,supression:_NY_police_and_PPE
+374,supression: NY woman denied access to voting,64657,supression:_NY_woman_denied_access_to_voting
+375,supression: PA train blocks voiting,6,supression:_PA_train_blocks_voiting
+376,supression: riggedthefilm,915,supression:_riggedthefilm
+377,supression: SC Vote Prevention,65286,supression:_SC_Vote_Prevention
+378,supression: Spanish Language Supression at Polls,372,supression:_Spanish_Language_Supression_at_Polls
+379,supression: Trump seeks ballot info,35384,supression:_Trump_seeks_ballot_info
+380,supression: TX immigrant mistreatment,25798,supression:_TX_immigrant_mistreatment
+381,supression: TX national guard,239,supression:_TX_national_guard
+382,supression: West Coast Fires,203,supression:_West_Coast_Fires
+383,tech: 4chan oregon vote change,10934,tech:_4chan_oregon_vote_change
+385,tech: Dr. Shiva MI Glitch,56995,tech:_Dr._Shiva_MI_Glitch
+386,tech: ElectionGuard,312,tech:_ElectionGuard
+387,tech: Feinstein/Pelosi Election Software,15853,tech:_Feinstein_Pelosi_Election_Software
+388,tech: FL voter info leaked,1216,tech:_FL_voter_info_leaked
+389,tech: Hammer and Scorecard,2954454,tech:_Hammer_and_Scorecard
+390,tech: isabella vote jump,328,tech:_isabella_vote_jump
+391,tech: Livestream of protests/riots,14,tech:_Livestream_of_protests_riots
+392,tech: Ohio Voting Content,356,tech:_Ohio_Voting_Content
+393,tech: philly stolen flash drive,90865,tech:_philly_stolen_flash_drive
+394,tech: Russia 2016 Hacking,7232,tech:_Russia_2016_Hacking
+395,tech: Russian Malware ES&S/Diebold,7984,tech:_Russian_Malware_ES&S_Diebold
+396,tech: Trump hack in 2016,18,tech:_Trump_hack_in_2016
+397,tech: Zuckerberg Hacking WI,12154,tech:_Zuckerberg_Hacking_WI
+398,texas political director fraud1,3207,texas_political_director_fraud1
+399,Trump delegtimization 3,4023,Trump_delegtimization_3
+400,USPS: 28 million missing ballots,2020,USPS:_28_million_missing_ballots
+401,"USPS: 300,000 Undelivered Ballots",1136236,"USPS:_300,000_Undelivered_Ballots"
+402,USPS: Fake Votes,1160,USPS:_Fake_Votes
+403,USPS: FL 1.4 million missing ballots,224,USPS:_FL_1.4_million_missing_ballots
+404,USPS: FL 23% rejected mail-in,254801,USPS:_FL_23%_rejected_mail-in
+405,USPS: FL 80% missing Black and Latino votes,538,USPS:_FL_80%_missing_Black_and_Latino_votes
+406,USPS: FL Mail Room,30210,USPS:_FL_Mail_Room
+407,USPS: NJ worker dumps mail,5093,USPS:_NJ_worker_dumps_mail
+408,USPS: NV Veritas,226972,USPS:_NV_Veritas
+409,USPS: OH ripping trump ballots,817,USPS:_OH_ripping_trump_ballots
+410,USPS: PA Long Wait,10358,USPS:_PA_Long_Wait
+411,USPS: PA Mail Carrier Trash Ballot,15224,USPS:_PA_Mail_Carrier_Trash_Ballot
+412,USPS: PA stop delivery whistleblower,72129,USPS:_PA_stop_delivery_whistleblower
+413,USPS: Postal Workers Partisan,292,USPS:_Postal_Workers_Partisan
+414,vote changing1,64417,vote_changing1
+415,voting info: 12th Amendment,5253,voting_info:_12th_Amendment
+416,voting info: abuse and public records,1617,voting_info:_abuse_and_public_records
+417,voting info: ads say vote not counted,436,voting_info:_ads_say_vote_not_counted
+418,voting info: anyone can votes as often as you wish,85,voting_info:_anyone_can_votes_as_often_as_you_wish
+419,voting info: ballot box closed becuase of COVID,130,voting_info:_ballot_box_closed_becuase_of_COVID
+420,voting info: ballot surredering,9915,voting_info:_ballot_surredering
+421,voting info: CA fake voting center,2244,voting_info:_CA_fake_voting_center
+422,voting info: CO postcards,1073,voting_info:_CO_postcards
+423,voting info: CT revert to phase 1,3,voting_info:_CT_revert_to_phase_1
+424,voting info: EIP-Ca,56,voting_info:_EIP-Ca
+425,voting info: FL secrecy sleeves,138,voting_info:_FL_secrecy_sleeves
+426,voting info: GA ballot surredering,159,voting_info:_GA_ballot_surredering
+427,voting info: MD voting deadline,9,voting_info:_MD_voting_deadline
+428,voting info: MI robocalls,30294,voting_info:_MI_robocalls
+429,voting info: misleading Voter Participation Center mailings,1,voting_info:_misleading_Voter_Participation_Center_mailings
+430,voting info: MS return absentee ballots in person,3439,voting_info:_MS_return_absentee_ballots_in_person
+431,voting info: Multiple States Vote Tomorrow,1,voting_info:_Multiple_States_Vote_Tomorrow
+432,voting info: naked ballots,19,voting_info:_naked_ballots
+433,voting info: NC same day registration,8,voting_info:_NC_same_day_registration
+434,voting info: NC wrong ballot,27314,voting_info:_NC_wrong_ballot
+435,voting info: NM shut down polling places,2,voting_info:_NM_shut_down_polling_places
+436,voting info: NY voting process,195,voting_info:_NY_voting_process
+437,voting info: OK fake text messages,23,voting_info:_OK_fake_text_messages
+438,voting info: PA false change in polling place,321,voting_info:_PA_false_change_in_polling_place
+439,voting info: poll worker ballot marks,5092,voting_info:_poll_worker_ballot_marks
+440,voting info: post-election voting,533,voting_info:_post-election_voting
+441,voting info: PSA for wrong state,7,voting_info:_PSA_for_wrong_state
+442,voting info: Too Late to Send Mail Ballots,108024,voting_info:_Too_Late_to_Send_Mail_Ballots
+443,voting info: trump not on ballot,9,voting_info:_trump_not_on_ballot
+444,voting info: TX Party Registration,484,voting_info:_TX_Party_Registration
+445,voting info: US constitution amendment,478,voting_info:_US_constitution_amendment
+446,voting info: vote by mail for warrants robocalls,25116,voting_info:_vote_by_mail_for_warrants_robocalls
+447,voting info: vote in person,1,voting_info:_vote_in_person
+448,voting info: vote on the 4th,82,voting_info:_vote_on_the_4th
+449,voting info: WA vote changed,1,voting_info:_WA_vote_changed
+450,voting info: WI 7 days left,242,voting_info:_WI_7_days_left
+451,Voting Twice: 58% Double Democrats,45371,Voting_Twice:_58%_Double_Democrats
+452,Voting Twice: 5 Ballots,3396,Voting_Twice:_5_Ballots
+453,Voting Twice: CA Video,17378,Voting_Twice:_CA_Video
+454,Voting Twice: Encouraging Voters,172489,Voting_Twice:_Encouraging_Voters
+455,Voting Twice: Gateway Pundit Election Officials,2071,Voting_Twice:_Gateway_Pundit_Election_Officials
+456,Voting Twice: Hannity Virginia Voters,49851,Voting_Twice:_Hannity_Virginia_Voters
+457,Voting Twice: Melania Votes,2517,Voting_Twice:_Melania_Votes
+458,Voting Twice: Multi-State Doubles,1,Voting_Twice:_Multi-State_Doubles
+459,Voting Twice: NH 2016 Double Vote,5038,Voting_Twice:_NH_2016_Double_Vote
+460,Voting Twice: PA Duplicates,87889,Voting_Twice:_PA_Duplicates
+461,Watermark: DHS Sting,131906,Watermark:_DHS_Sting
+462,Watermark: WA Watermark,6,Watermark:_WA_Watermark

@@ -61,7 +61,7 @@ def plot_posterior_and_save(row,root='.', keep=True,freq=5,color='k'):
             plt.close()
 
 def SI_Posterior(included, root='.'):
-    for start in range(6):
+    for start in range(12):
         fig = plt.figure(figsize=(25.5,33))
         gs0 = gridspec.GridSpec(8,5, figure=fig)
 

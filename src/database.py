@@ -30,7 +30,7 @@ def list_incidents(engine):
     Keyword arguments:
     engine -- postgres engine created with src.database.get_engine
     """
-    query_all = "SELECT incident, COUNT(*) FROM public.all_ticket_tweets WHERE incident IS NOT NULL GROUP BY incident;"
+    query_all = "SELECT incident, COUNT(*) FROM public.incident_tweets WHERE incident IS NOT NULL GROUP BY incident;"
     incidents =pd.read_sql(query_all, con=engine)
     return incidents
 
@@ -42,7 +42,7 @@ def get_incident_data(incident,engine):
     incident -- the name of an incident, as identified in our database
     engine -- postgres engine created with src.database.get_engine
     """
-    query = "SELECT user_followers_count, user_screen_name, created_at, user_verified FROM all_ticket_tweets WHERE incident=(%(incident)s)"
+    query = "SELECT user_followers_count, user_screen_name, created_at, user_verified FROM public.incident_tweets WHERE incident=(%(incident)s)"
     incident_df = pd.read_sql(query, params={'incident':incident},con=engine)
     return incident_df
 
@@ -56,7 +56,7 @@ def aggregate_and_save(row, engine,freq=5, removed=[], floc='/data/timeseries/ag
     floc -- relative path to store output
     root -- root of path to store output. Default '.'
     """
-    if keep and os.path.isfile(root + floc + row['incident_name'] + '_raw.parquet'):
+    if keep and os.path.isfile(root + floc + row['incident_name'] + '_raw.csv'):
         pass
         
     else:
@@ -64,5 +64,5 @@ def aggregate_and_save(row, engine,freq=5, removed=[], floc='/data/timeseries/ag
         if type(removed)==dict:
             removed = removed[row['incident']]   
         agg = aggregate(raw_df,freq, removed,to_share)
-        agg.to_parquet(root + floc + row['incident_name'] + '_raw.parquet',compression=None)
+        agg.to_csv(root + floc + row['incident_name'] + '_raw.csv')
     return True

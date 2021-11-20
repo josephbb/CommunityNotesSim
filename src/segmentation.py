@@ -50,8 +50,8 @@ def segment_ts(x,before_min=.05,freq=5, after_min=.05,pmin=.3):
     return cuts
 
 def get_peaks(row,root='.', start=0, freq=5,pmin=.3,after_min=.05, before_min=.05):
-    raw_df = pd.read_parquet(root + '/data/timeseries/aggregated/' 
-                             + row['incident_name'] + '_raw.parquet')
+    raw_df = pd.read_csv(root + '/data/timeseries/aggregated/' 
+                             + row['incident_name'] + '_raw.csv')
     x = raw_df['total_tweets'].values
     peak_cuts=segment_ts(x,freq=5,pmin=.3,after_min=.05, 
                                 before_min=.05)
@@ -59,9 +59,9 @@ def get_peaks(row,root='.', start=0, freq=5,pmin=.3,after_min=.05, before_min=.0
     return peak_cuts
 
 def plot_event(row, freq=5, root='.'):
-    raw_df = pd.read_parquet(root 
+    raw_df = pd.read_csv(root 
                          + '/data/timeseries/aggregated/' 
-                         + row['incident_name'] + '_raw.parquet')
+                         + row['incident_name'] + '_raw.csv')
     y = raw_df['total_tweets'][row['start']:row['end']].values
     x = np.arange(y.size)*freq
     plt.figure()

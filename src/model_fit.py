@@ -11,13 +11,13 @@ def fit_model(row, model, keep=True,root='.'):
         pass
     
     else:
-        raw_df = pd.read_parquet(root 
+        raw_df = pd.read_csv(root 
                      + '/data/timeseries/aggregated/' 
-                     + row['incident_name'] + '_raw.parquet')
+                     + row['incident_name'] + '_raw.csv')
         raw_df = raw_df.iloc[row['start']:row['end']]
 
         #We add one here because it avoids a divide by zero error in log. Should not impact inference
-        stan_data = dict(y=raw_df['total_tweets'].values.astype('int'),
+        stan_data = dict(y=raw_df['total_tweets'].values.astype('int')[1:],
                         N=raw_df.shape[0], 
                         x=np.log(raw_df['user_followers_count'].values.astype('int')+1))
         samples = model.sampling(data=stan_data,
@@ -33,9 +33,9 @@ def fit_model(row, model, keep=True,root='.'):
 def check_fit(row,root='.'):
     output_dict = {}
     sample_loc = root+'/output/posteriors/' + row['event_name'] + '_raw.p'
-    data_loc = root+'/data/timeseries/aggregated/' + row['incident_name'] + '_raw.parquet'
+    data_loc = root+'/data/timeseries/aggregated/' + row['incident_name'] + '_raw.csv'
     samples = pickle.load(open(sample_loc, 'rb'))
-    dat = pd.read_parquet(data_loc).iloc[row['start']:row['end']]
+    dat = pd.read_csv(data_loc).iloc[row['start']:row['end']]
     y = dat['total_tweets'].values
     
     print('--------')

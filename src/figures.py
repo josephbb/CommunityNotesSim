@@ -16,13 +16,13 @@ from src.simulation import simulate
 
 def plot_posterior(row, cumulative=True,freq=5,root='.', div=1000,color='k'):
     sample_loc = root+'/output/posteriors/' + row['event_name'] + '_extracted.p'
-    dat = root+'/data/timeseries/aggregated/' + row['incident_name'] + '_raw.parquet'
+    dat = root+'/data/timeseries/aggregated/' + row['incident_name'] + '_raw.csv'
     
-    df = pd.read_parquet(dat).iloc[row['start']:row['end']]
+    df = pd.read_csv(dat).iloc[row['start']:row['end']]
     samples = pickle.load(open(sample_loc,'rb'))
     
-    x= np.arange(df.shape[0])*freq
-    y = df['total_tweets'].values
+    x= np.arange(df.shape[0]-1)*freq
+    y = df['total_tweets'].values[1:]
     
     mu = np.mean(samples['y_hat'],axis=0)
     ci = np.percentile(samples['y_hat'],q=[5.5,94.5],axis=0)
@@ -132,7 +132,7 @@ def plot_figure_1(row, included,pal,root='.',baseline_color='k'):
         ax.text(-0.1, 1.1, string.ascii_uppercase[n], transform=ax.transAxes, 
                 size=20, weight='bold')
 
-    ts = pd.read_parquet(row['data_loc'])[row['start']-20:row['end']+20]
+    ts = pd.read_csv(row['data_loc'])[row['start']-20:row['end']+20]
     plt.sca(axs[0])
     y = ts['total_tweets'].values
     x = np.arange(y.shape[0])*5
@@ -169,7 +169,7 @@ def plot_figure_1(row, included,pal,root='.',baseline_color='k'):
 
 
     ##Run single event simulations
-    agg_df = pd.read_parquet(row['data_loc'])[row['start']:row['end']]
+    agg_df = pd.read_csv(row['data_loc'])[row['start']:row['end']]
     follower_distribution = [np.array(item) for item in agg_df['follower_distribution'].values]
     y = agg_df['total_tweets']
     sample_loc = root+'/output/posteriors/' + row['event_name'] + '_extracted.p'
@@ -203,7 +203,7 @@ def plot_figure_1(row, included,pal,root='.',baseline_color='k'):
                        stop_at=120)
         removal.append(out)  
 
-    agg_df_ban = pd.read_parquet(row['50K_loc'])[row['start']:row['end']]
+    agg_df_ban = pd.read_csv(row['50K_loc'])[row['start']:row['end']]
     follower_distribution_ban = [np.array(item) for item in agg_df_ban['follower_distribution'].values]
     y = agg_df_ban['total_tweets']
 

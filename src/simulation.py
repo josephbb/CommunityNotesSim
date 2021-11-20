@@ -3,6 +3,7 @@ from tqdm.notebook import trange, tqdm
 import pickle
 import pandas as pd
 import os
+from ast import literal_eval
    
 def sim_row(sim_row,included,keep=False, verbose=False):
     save_loc = './output/simulations/' + sim_row['name'] + '.p'
@@ -20,14 +21,13 @@ def sim_row(sim_row,included,keep=False, verbose=False):
             row = included.iloc[ridx]
             model = pickle.load(open('./output/posteriors/model.p','rb'))
             samples = pickle.load(open(row['sample_loc'],'rb'))
-            agg_df = pd.read_parquet(row[sim_row['data_location']])[row['start']:row['end']]
-            follower_distrubtion = [np.array(item) for item in agg_df['follower_distribution'].values]
-            
+            agg_df = pd.read_csv(row[sim_row['data_location']])[row['start']:row['end']]
+            follower_distribution = [np.array(literal_eval(item)) for item in agg_df['follower_distribution'].values]
             outs = []
             
             for idx in range(sim_row['num_sims']):
                 out = simulate(samples,
-                         follower_distrubtion, nudge=sim_row['nudge'],
+                         follower_distribution, nudge=sim_row['nudge'],
                          stop_at=sim_row['stop_at'], decay_value=sim_row['decay_value'], 
                          vcb_value = sim_row['vcb_value'], decay_start=sim_row['decay_start'],
                          p_decay=sim_row['p_decay'], p_remove=sim_row['p_remove'],

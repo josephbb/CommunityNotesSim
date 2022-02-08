@@ -30,7 +30,7 @@ def fit_model(row, model, keep=True,root='.'):
             open(root + '/output/posteriors/' + row['event_name'] + '_raw.p', 'wb'))       
         return pystan.check_hmc_diagnostics(samples, pars={'alpha','beta','lambda','decay','phi'})
     
-def check_fit(row,root='.'):
+def check_fit(row,root='.',):
     output_dict = {}
     sample_loc = root+'/output/posteriors/' + row['event_name'] + '_raw.p'
     data_loc = root+'/data/timeseries/aggregated/' + row['incident_name'] + '_raw.csv'

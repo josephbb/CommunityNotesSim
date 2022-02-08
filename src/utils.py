@@ -19,6 +19,7 @@ def create_output_directories(location='.'):
                    'output/figures/',
                    'output/figures/MS/',
                    'output/figures/SI/',
+                   'output/figures/Events/',
                    'output/figures/SI/posterior_predictive/',
                    'output/simulations/',
                    'output/posteriors/']

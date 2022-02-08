@@ -30,7 +30,7 @@ def list_incidents(engine):
     Keyword arguments:
     engine -- postgres engine created with src.database.get_engine
     """
-    query_all = "SELECT incident, COUNT(*) FROM public.incident_tweets WHERE incident IS NOT NULL GROUP BY incident;"
+    query_all = "SELECT incident, COUNT(*) FROM public.incident_tweets WHERE incident IS NOT NULL AND misinfo_type != 'not misinformation' GROUP BY incident;"
     incidents =pd.read_sql(query_all, con=engine)
     return incidents
 

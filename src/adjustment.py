@@ -33,9 +33,9 @@ def get_adjusted_df(events, incidents,root='.'):
     after = []
     durings =[]
     for row in max_events_incidents.iterrows():
-        raw_df = pd.read_parquet(root 
+        raw_df = pd.read_csv(root 
                  + '/data/timeseries/aggregated/' 
-                 + row[1]['incident_name'] + '_raw.parquet')
+                 + row[1]['incident_name'] + '_raw.csv')
         after.append(raw_df.iloc[row[1]['end']:]['total_tweets'].sum())
         before.append(raw_df.iloc[:row[1]['start']]['total_tweets'].sum())
         durings.append(raw_df.iloc[row[1]['start']:row[1]['end']]['total_tweets'].sum())

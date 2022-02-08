@@ -3,6 +3,7 @@ from tqdm.notebook import trange, tqdm
 import pickle
 import pandas as pd
 import os
+import json
 from ast import literal_eval
    
 def sim_row(sim_row,included,keep=False, verbose=False):
@@ -55,8 +56,10 @@ def simulate(samples,follower_distribution,y,chain,nudge=1,
     if start > 0:
         output[0] = y[0:start] #Seed first timestep
     else: 
-        output[0] = y[0]
-    
+        try:
+            output[0] = y[0]
+        except:
+            output[0] = y.values[0]
     
     #Set up vcb and decay. We add 1 within the log as well in case
     #with banning there are no users in a given time-step (avoids divide by zero)

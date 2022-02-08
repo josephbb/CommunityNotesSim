@@ -13,6 +13,8 @@ import matplotlib.image as mpimg
 import matplotlib.gridspec as gridspec
 from src.utils import interp
 from src.simulation import simulate
+from ast import literal_eval
+import json
 
 def plot_posterior(row, cumulative=True,freq=5,root='.', div=1000,color='k'):
     sample_loc = root+'/output/posteriors/' + row['event_name'] + '_extracted.p'
@@ -106,8 +108,11 @@ def add_sim_line(sim_row,scale=1e6,root='.'):
     mu = np.median(out,axis=0)/scale
     ci = np.percentile(out,axis=0, q=[5.5,94.5])/scale
     xvals = np.linspace(0,1,interp_size)
-    plt.plot(xvals, mu,color=sim_row['color'])
-    plt.fill_between(xvals, ci[0], ci[1],alpha=.4,facecolor=sim_row['color'], label=sim_row['name'])
+   
+ 
+    color = json.loads(sim_row['color'])
+    plt.plot(xvals, mu,color=color)
+    plt.fill_between(xvals, ci[0], ci[1],alpha=.4,facecolor=color, label=sim_row['name'])
     
     return out
 
@@ -119,10 +124,10 @@ def plot_sims(order, sim_df, legend_title, legend_column):
     labels[0] = 'Base.'
     legend = plt.legend(labels=labels,title=legend_title,loc=2,prop={'size': 8})
     legend.get_title().set_fontsize('10')
-    plt.ylim(0,6)
+    plt.ylim(0,11)
     plt.xlim(0,1)
     plt.xlabel('Time (normalized)')
-    plt.ylabel('Cumulative engagement')
+    plt.ylabel('Cumulative posts')
     
 def plot_figure_1(row, included,pal,root='.',baseline_color='k'):
     fig, axs = plt.subplots(2,2,figsize=(8,8))
@@ -154,15 +159,17 @@ def plot_figure_1(row, included,pal,root='.',baseline_color='k'):
     plt.sca(axs[1])
     from src.figures import plot_posterior
     plot_posterior(row,cumulative=False,color=baseline_color)
-    plt.xlim(-5,)
+    plt.xlim(0,)
+    
 
 
     plt.sca(axs[2])
     from src.figures import plot_posterior
     plot_posterior(row,cumulative=True,color=baseline_color)
-    plt.xlim(-5,)
-
-
+    plt.xlim(0,)
+    plt.yticks([0,5,10,15,20,25,30])
+    plt.ylim(0, 30)
+    
     plt.sca(axs[3])
     plt.ylabel('Cumulative engagement')
 
@@ -170,7 +177,8 @@ def plot_figure_1(row, included,pal,root='.',baseline_color='k'):
 
     ##Run single event simulations
     agg_df = pd.read_csv(row['data_loc'])[row['start']:row['end']]
-    follower_distribution = [np.array(item) for item in agg_df['follower_distribution'].values]
+    follower_distribution = [np.array(literal_eval(item)) for item in agg_df['follower_distribution'].values]
+
     y = agg_df['total_tweets']
     sample_loc = root+'/output/posteriors/' + row['event_name'] + '_extracted.p'
     samples = pickle.load(open(sample_loc,'rb'))
@@ -205,6 +213,7 @@ def plot_figure_1(row, included,pal,root='.',baseline_color='k'):
 
     agg_df_ban = pd.read_csv(row['50K_loc'])[row['start']:row['end']]
     follower_distribution_ban = [np.array(item) for item in agg_df_ban['follower_distribution'].values]
+    follower_distribution_ban = [np.array(literal_eval(item)) for item in agg_df_ban['follower_distribution'].values]
     y = agg_df_ban['total_tweets']
 
     ban = []
@@ -231,28 +240,42 @@ def plot_figure_1(row, included,pal,root='.',baseline_color='k'):
             color=pal[1],lw=3,label='50K')
 
     legend = plt.legend(title='Condition',
-                        loc=2,prop={'size': 8})
+                        loc=4,prop={'size': 8})
     legend.get_title().set_fontsize('10')
 
-    plt.ylabel('Cumulative engagement \n(thousands)')
+    plt.ylabel('Cumulative posts \n(thousands)')
     plt.xlabel('Time (min.)')
     plt.xlim(0,x.size)
     plt.tight_layout()
     
 def plot4c(samples, max_events_incidents,x_sim): 
+    
     mu_pred = np.median(samples['y_sim'],axis=0)
-    ci_pred = np.percentile(samples['y_sim'],q=[4.5,50,94.5], axis=0)
+    ci_pred = np.percentile(samples['y_sim'],q=[1.5,50,98.5], axis=0)
 
     plt.plot(x_sim, mu_pred,color='k')
+    plt.fill_between(x_sim,ci_pred[0], ci_pred[2],facecolor='k',alpha=.1)
+    
+
+    mu_pred = np.median(samples['y_sim'],axis=0)
+    ci_pred = np.percentile(samples['y_sim'],q=[5.5,50,94.5], axis=0)
+
     plt.fill_between(x_sim,ci_pred[0], ci_pred[2],facecolor='k',alpha=.3)
 
+    
+    mu_pred = np.median(samples['y_sim'],axis=0)
+    ci_pred = np.percentile(samples['y_sim'],q=[25,50,75], axis=0)
+
+    plt.plot(x_sim, mu_pred,color='k')
+    plt.fill_between(x_sim,ci_pred[0], ci_pred[2],facecolor='k',alpha=.5)
+    
+
     plt.scatter(max_events_incidents['observed_engagement'], 
-                max_events_incidents['after'],facecolor='k',alpha=.3)
+                max_events_incidents['after'],facecolor='k',alpha=.5,linewidths=0)
 
     ax = plt.gca()
     ax.set_yscale('log')
     ax.set_xscale('log')
-    plt.ylabel('Subsequent engagement')
-    plt.xlabel('Event engagement')
+    plt.ylabel('Subsequent posts')
+    plt.xlabel('Event posts')
     plt.xlim(np.min(x_sim), np.max(x_sim))
-    

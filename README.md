@@ -16,7 +16,7 @@ Instructions for downloading the data are likewise provided on OSF
 Detailed installation instructions are included on <a href=https://osf.io/2dcer/wiki/home/>OSF</a>. Installation time will vary depending upon
 what you already have installed, typically no more than 30 minutes. 
 <h2>Running the code</h2>
-Running the code is the same as running any other Jupyter notebook. On our machine, it took approximately 4 hours using 
+Running the code is the same as running any other Jupyter notebook. On our machine, it took approximately 8 hours using 
 a fraction of the resources. It may take several hours/multiple days depending upon your system specifications
 <h2>Replicating the results</h2>
 The jupyter notebook reproduces all results exactly as they are presented in the paper. 

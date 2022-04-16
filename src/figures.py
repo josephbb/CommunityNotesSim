@@ -41,9 +41,9 @@ def plot_posterior(row, cumulative=True,freq=5,root='.', div=1000,color='k'):
     plt.fill_between(x, ci[0,:], ci[1,:],alpha=.3,facecolor=color)
     
     
-    plt.ylabel('Tweets per %s min.' % str(freq))
+    plt.ylabel('Posts per %s min.' % str(freq))
     if cumulative:
-        plt.ylabel('Cumulative engagement \n(thousands)')
+        plt.ylabel('Cumulative posts \n(thousands)')
     plt.xlabel('Time (min.)')
     plt.xlim(0,mu.size*freq-5)
 
@@ -59,7 +59,7 @@ def plot_posterior_and_save(row,root='.', keep=True,freq=5,color='k'):
             samples = plot_posterior(row,cumulative=True,freq=5,color=color)
             plt.suptitle(row['event_name'])
             plt.tight_layout()
-            plt.savefig(file_output,dpi=400)
+            plt.savefig(file_output,dpi=300)
             plt.close()
 
 def SI_Posterior(included, root='.'):
@@ -152,7 +152,7 @@ def plot_figure_1(row, included,pal,root='.',baseline_color='k'):
     plt.plot([end,end],
               [0, np.max(y)*1.5],color='k',ls='--')
     plt.ylim(0, np.max(y)*1.3)
-    plt.ylabel('Tweets per 5 min.')
+    plt.ylabel('Posts per 5 min.')
     plt.xlabel('Time (min.)')
     plt.xlim(-5,)
 
@@ -164,14 +164,14 @@ def plot_figure_1(row, included,pal,root='.',baseline_color='k'):
 
 
     plt.sca(axs[2])
-    from src.figures import plot_posterior
     plot_posterior(row,cumulative=True,color=baseline_color)
     plt.xlim(0,)
-    plt.yticks([0,5,10,15,20,25,30])
-    plt.ylim(0, 30)
+    plt.ylim(0, 50)
+
+    axs[2].set_ylabel('Cumulative posts \n(thousands)')
     
     plt.sca(axs[3])
-    plt.ylabel('Cumulative engagement')
+    plt.ylabel('Cumulative posts \n(thousands)')
 
 
 
@@ -240,12 +240,14 @@ def plot_figure_1(row, included,pal,root='.',baseline_color='k'):
             color=pal[1],lw=3,label='50K')
 
     legend = plt.legend(title='Condition',
-                        loc=4,prop={'size': 8})
+                        loc='upper left',prop={'size': 8})
     legend.get_title().set_fontsize('10')
 
     plt.ylabel('Cumulative posts \n(thousands)')
     plt.xlabel('Time (min.)')
     plt.xlim(0,x.size)
+    plt.ylim(0, 50)
+
     plt.tight_layout()
     
 def plot4c(samples, max_events_incidents,x_sim): 
@@ -254,20 +256,20 @@ def plot4c(samples, max_events_incidents,x_sim):
     ci_pred = np.percentile(samples['y_sim'],q=[1.5,50,98.5], axis=0)
 
     plt.plot(x_sim, mu_pred,color='k')
-    plt.fill_between(x_sim,ci_pred[0], ci_pred[2],facecolor='k',alpha=.1)
+    plt.fill_between(x_sim,ci_pred[0], ci_pred[2],edgecolor="none",facecolor='k',alpha=.1)
     
 
     mu_pred = np.median(samples['y_sim'],axis=0)
     ci_pred = np.percentile(samples['y_sim'],q=[5.5,50,94.5], axis=0)
 
-    plt.fill_between(x_sim,ci_pred[0], ci_pred[2],facecolor='k',alpha=.3)
+    plt.fill_between(x_sim,ci_pred[0], ci_pred[2],edgecolor="none",facecolor='k',alpha=.2)
 
     
     mu_pred = np.median(samples['y_sim'],axis=0)
     ci_pred = np.percentile(samples['y_sim'],q=[25,50,75], axis=0)
 
     plt.plot(x_sim, mu_pred,color='k')
-    plt.fill_between(x_sim,ci_pred[0], ci_pred[2],facecolor='k',alpha=.5)
+    plt.fill_between(x_sim,ci_pred[0], ci_pred[2],edgecolor="none",facecolor='k',alpha=.4)
     
 
     plt.scatter(max_events_incidents['observed_engagement'], 
@@ -279,3 +281,5 @@ def plot4c(samples, max_events_incidents,x_sim):
     plt.ylabel('Subsequent posts')
     plt.xlabel('Event posts')
     plt.xlim(np.min(x_sim), np.max(x_sim))
+    plt.ylim(np.min(x_sim), np.max(x_sim))
+    plt.xticks(plt.yticks())

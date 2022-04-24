@@ -282,4 +282,4 @@ def plot4c(samples, max_events_incidents,x_sim):
     plt.xlabel('Event posts')
     plt.xlim(np.min(x_sim), np.max(x_sim))
     plt.ylim(np.min(x_sim), np.max(x_sim))
-    plt.xticks(plt.yticks())
+ 

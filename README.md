@@ -1,4 +1,4 @@
-# [Limiting Factors in the Effectiveness of Crowd-Sourced Labeling for Combating Misinformation}](https://github.com/josephbb/CommunityNotesSim)
+# [Limiting Factors in the Effectiveness of Crowd-Sourced Labeling for Combating Misinformation](https://github.com/josephbb/CommunityNotesSim)
 Joseph B. Bak-Coleman(1), Zeynep Tufekci(1),
 1. Columbia University School of Journalism 
 

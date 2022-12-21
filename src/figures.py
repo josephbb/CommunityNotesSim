@@ -2,7 +2,6 @@ import pandas
 import pickle
 import matplotlib.pyplot as plt
 import seaborn as sns
-import pystan
 import pandas as pd
 import numpy as np
 import numpy as np
@@ -15,9 +14,14 @@ from src.utils import interp
 from src.simulation import simulate
 from ast import literal_eval
 import json
+import stan
+
+def reshape(x):
+    x = np.array(x)
+    return np.reshape(x, (x.shape[0]*x.shape[1],x.shape[2]))
 
 def plot_posterior(row, cumulative=True,freq=5,root='.', div=1000,color='k'):
-    sample_loc = root+'/output/posteriors/' + row['event_name'] + '_extracted.p'
+    sample_loc = root+'/output/posteriors/' + row['event_name'] + '_raw.p'
     dat = root+'/data/timeseries/aggregated/' + row['incident_name'] + '_raw.csv'
     
     df = pd.read_csv(dat).iloc[row['start']:row['end']]
@@ -26,14 +30,14 @@ def plot_posterior(row, cumulative=True,freq=5,root='.', div=1000,color='k'):
     x= np.arange(df.shape[0]-1)*freq
     y = df['total_tweets'].values[1:]
     
-    mu = np.mean(samples['y_hat'],axis=0)
-    ci = np.percentile(samples['y_hat'],q=[5.5,94.5],axis=0)
+    mu = np.mean(reshape(samples.posterior['y_hat']),axis=0)
+    ci = np.percentile(reshape(samples.posterior['y_hat']),q=[5.5,94.5],axis=0)
     
     if cumulative:
         y=np.cumsum(y)/div
-        mu = np.median(np.cumsum(samples['y_hat'],axis=1),axis=0)/div
+        mu = np.median(np.cumsum(reshape(samples.posterior['y_hat']),axis=1),axis=0)/div
 
-        ci = np.percentile(np.cumsum(samples['y_hat'],axis=1)
+        ci = np.percentile(np.cumsum(reshape(samples.posterior['y_hat']),axis=1)
                            ,q=[5.5,94.5],axis=0)/div
         
     plt.plot(x,y ,color='k')
@@ -128,127 +132,6 @@ def plot_sims(order, sim_df, legend_title, legend_column):
     plt.xlim(0,1)
     plt.xlabel('Time (normalized)')
     plt.ylabel('Cumulative posts')
-    
-def plot_figure_1(row, included,pal,root='.',baseline_color='k'):
-    fig, axs = plt.subplots(2,2,figsize=(8,8))
-    axs = axs.flat
-
-    for n, ax in enumerate(axs):
-        ax.text(-0.1, 1.1, string.ascii_uppercase[n], transform=ax.transAxes, 
-                size=20, weight='bold')
-
-    ts = pd.read_csv(row['data_loc'])[row['start']-20:row['end']+20]
-    plt.sca(axs[0])
-    y = ts['total_tweets'].values
-    x = np.arange(y.shape[0])*5
-    plt.plot(x,y,color='k')
-
-    plt.xlim(0,np.max(x))
-    start = row['start']
-    start = 20*5
-    end = (x.shape[0]-20)*5
-    plt.plot([start,start],
-              [0, np.max(y)*1.5],color='k',ls='--')
-    plt.plot([end,end],
-              [0, np.max(y)*1.5],color='k',ls='--')
-    plt.ylim(0, np.max(y)*1.3)
-    plt.ylabel('Posts per 5 min.')
-    plt.xlabel('Time (min.)')
-    plt.xlim(-5,)
-
-    plt.sca(axs[1])
-    from src.figures import plot_posterior
-    plot_posterior(row,cumulative=False,color=baseline_color)
-    plt.xlim(0,)
-    
-
-
-    plt.sca(axs[2])
-    plot_posterior(row,cumulative=True,color=baseline_color)
-    plt.xlim(0,)
-    plt.ylim(0, 50)
-
-    axs[2].set_ylabel('Cumulative posts \n(thousands)')
-    
-    plt.sca(axs[3])
-    plt.ylabel('Cumulative posts \n(thousands)')
-
-
-
-    ##Run single event simulations
-    agg_df = pd.read_csv(row['data_loc'])[row['start']:row['end']]
-    follower_distribution = [np.array(literal_eval(item)) for item in agg_df['follower_distribution'].values]
-
-    y = agg_df['total_tweets']
-    sample_loc = root+'/output/posteriors/' + row['event_name'] + '_extracted.p'
-    samples = pickle.load(open(sample_loc,'rb'))
-
-    baseline = []
-    for idx in range(100):
-        chain = np.random.choice(4000)
-        out = simulate(samples,follower_distribution, y, chain)
-        baseline.append(out)
-
-    nudge = []
-    for idx in range(100):
-        chain = np.random.choice(4000)
-        out = simulate(samples,follower_distribution, y, chain,
-                      nudge=.9)
-        nudge.append(out)
-
-    vcb = []
-    for idx in range(100):
-        chain = np.random.choice(4000)
-        out = simulate(samples,follower_distribution, y, chain,
-                      vcb_value=.9, p_decay=1,decay_start=60)
-        vcb.append(out)
-
-    removal = []
-    for idx in range(100):
-        chain = np.random.choice(4000)
-        out = simulate(samples,follower_distribution, y, chain,
-                       p_decay=1, p_remove=1,decay_start=120,
-                       stop_at=120)
-        removal.append(out)  
-
-    agg_df_ban = pd.read_csv(row['50K_loc'])[row['start']:row['end']]
-    follower_distribution_ban = [np.array(item) for item in agg_df_ban['follower_distribution'].values]
-    follower_distribution_ban = [np.array(literal_eval(item)) for item in agg_df_ban['follower_distribution'].values]
-    y = agg_df_ban['total_tweets']
-
-    ban = []
-    for idx in range(100):
-        chain = np.random.choice(4000)
-        out = simulate(samples,follower_distribution_ban, y, chain)
-        ban.append(out)
-
-
-
-    get_cumulative = lambda x: np.median(np.cumsum(np.array(x).T,axis=0),
-             axis=1)/1000
-    x = np.arange(get_cumulative(baseline).shape[0])*5
-
-    plt.plot(get_cumulative(baseline),
-            color='grey',lw=3,label='Baseline')
-    plt.plot(get_cumulative(removal),
-            color=pal[0],lw=3,label='Removal')
-    plt.plot(get_cumulative(vcb),
-            color=pal[-3],lw=3,label='VCB')
-    plt.plot(get_cumulative(nudge),
-            color=pal[2],lw=3,label='10% Nudge')
-    plt.plot(get_cumulative(ban),
-            color=pal[1],lw=3,label='50K')
-
-    legend = plt.legend(title='Condition',
-                        loc='upper left',prop={'size': 8})
-    legend.get_title().set_fontsize('10')
-
-    plt.ylabel('Cumulative posts \n(thousands)')
-    plt.xlabel('Time (min.)')
-    plt.xlim(0,x.size)
-    plt.ylim(0, 50)
-
-    plt.tight_layout()
     
 def plot4c(samples, max_events_incidents,x_sim): 
     

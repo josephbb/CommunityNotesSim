@@ -47,7 +47,7 @@ First download this repository. Either download directly or open a command line 
 You will an [Anaconda](https://docs.anaconda.com/anaconda/install/index.html) or python installation and command-line interface. The simplest way to install the requirements is to navigate to the directory and type ``pip install -r requirements.txt``. You may, however, wish to install these in a [virtual environment](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html) to avoid conflicts with your currently installed python packages. Note that installing these packages, particularly Stan and Pystan can take time and require compilation on your local machine.
 
 ### Getting the data
-Download the data, which was published previously, from [Zenodo](https://zenodo.org/record/6480218). Extract it into a folder named ``data`` in the same directory as ``analysis.ipynb``
+Download the data, which was published previously, from [Zenodo](https://zenodo.org/record/6480218). Extract it into a folder named ``data`` in the same directory as ``analysis.ipynb``. You will additionally need to download the latest data from [community notes](https://twitter.com/i/birdwatch/download-data). Download the "Notes Data" and "Notes Status History" data and place them in the ``/data`` directory. 
 ### Running the analysis
 
 The simplest approach is to navigate to the directory and simply type:

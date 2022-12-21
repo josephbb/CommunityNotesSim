@@ -132,37 +132,5 @@ def plot_sims(order, sim_df, legend_title, legend_column):
     plt.xlim(0,1)
     plt.xlabel('Time (normalized)')
     plt.ylabel('Cumulative posts')
-    
-def plot4c(samples, max_events_incidents,x_sim): 
-    
-    mu_pred = np.median(samples['y_sim'],axis=0)
-    ci_pred = np.percentile(samples['y_sim'],q=[1.5,50,98.5], axis=0)
 
-    plt.plot(x_sim, mu_pred,color='k')
-    plt.fill_between(x_sim,ci_pred[0], ci_pred[2],edgecolor="none",facecolor='k',alpha=.1)
-    
-
-    mu_pred = np.median(samples['y_sim'],axis=0)
-    ci_pred = np.percentile(samples['y_sim'],q=[5.5,50,94.5], axis=0)
-
-    plt.fill_between(x_sim,ci_pred[0], ci_pred[2],edgecolor="none",facecolor='k',alpha=.2)
-
-    
-    mu_pred = np.median(samples['y_sim'],axis=0)
-    ci_pred = np.percentile(samples['y_sim'],q=[25,50,75], axis=0)
-
-    plt.plot(x_sim, mu_pred,color='k')
-    plt.fill_between(x_sim,ci_pred[0], ci_pred[2],edgecolor="none",facecolor='k',alpha=.4)
-    
-
-    plt.scatter(max_events_incidents['observed_engagement'], 
-                max_events_incidents['after'],facecolor='k',alpha=.5,linewidths=0)
-
-    ax = plt.gca()
-    ax.set_yscale('log')
-    ax.set_xscale('log')
-    plt.ylabel('Subsequent posts')
-    plt.xlabel('Event posts')
-    plt.xlim(np.min(x_sim), np.max(x_sim))
-    plt.ylim(np.min(x_sim), np.max(x_sim))
  
